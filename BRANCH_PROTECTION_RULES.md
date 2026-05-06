@@ -22,8 +22,8 @@ main (production)
 ### 🔴 Main Branch (`main`)
 
 **Who can commit:**
-- ✅ Only `sandeep3565-code` (repository owner)
-- ❌ No direct commits from other users
+- ❌ NO direct commits allowed - not even for repository owner
+- ✅ All commits MUST go through Pull Requests
 
 **Merge Rules:**
 - ✅ Merges allowed ONLY from:
@@ -32,7 +32,7 @@ main (production)
 - ✅ MUST be via Pull Request
 - ✅ REQUIRES PR approval from code owner
 - ✅ All status checks must pass
-- ❌ Direct commits BLOCKED for all users except owner
+- ❌ Direct commits BLOCKED for ALL users (including owner)
 
 **Protected:** YES
 
@@ -41,8 +41,8 @@ main (production)
 ### 🟢 Develop Branch (`develop`)
 
 **Who can commit:**
-- ✅ Only `sandeep3565-code` (repository owner)
-- ❌ No direct commits from other users
+- ❌ NO direct commits allowed - not even for repository owner
+- ✅ All commits MUST go through Pull Requests
 
 **Merge Rules:**
 - ✅ Merges allowed from:
@@ -51,7 +51,7 @@ main (production)
 - ✅ MUST be via Pull Request
 - ✅ REQUIRES PR approval from code owner
 - ✅ All status checks must pass
-- ❌ Direct commits BLOCKED for all users except owner
+- ❌ Direct commits BLOCKED for ALL users (including owner)
 - ❌ Merge blocked until PR is accepted
 
 **Protected:** YES
