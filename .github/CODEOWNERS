@@ -1,0 +1,17 @@
+# This file defines code ownership and approval requirements
+# Any PRs affecting these files require approval from the specified owners
+
+# All code requires approval from code owner
+* @sandeep3565-code
+
+# Branch-specific rules
+# Main branch - any merge requires code owner approval
+main @sandeep3565-code
+
+# Develop branch - any merge requires code owner approval
+develop @sandeep3565-code
+
+# CI/CD and configuration
+.github/ @sandeep3565-code
+*.yml @sandeep3565-code
+*.yaml @sandeep3565-code
