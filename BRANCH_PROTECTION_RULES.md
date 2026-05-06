@@ -220,7 +220,7 @@ A: Owner can commit directly to main or develop (they're exempt from the push re
 ## Code Owner
 
 - **GitHub Handle:** `sandeep3565-code`
-- **Email:** `sandeep.kumar@matrixcomsec.com`
+- **Email:** `sandeep.3565.kumar@gmail.com`
 
 All PR approvals for `main` and `develop` merges must come from the code owner.
 
