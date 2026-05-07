@@ -1,0 +1,25 @@
+# Buildroot Configuration for Rockchip830 (RV1106) Toolchain
+# ARM Cortex-A7 with NEON+VFPv4 (hard float)
+
+# Target Architecture - ARM 32-bit
+BR2_arm=y
+BR2_ARM_CPU_CORTEX_A7=y
+BR2_ARM_INSTRUCTIONS_THUMB2=y
+BR2_ARM_ENABLE_VFP=y
+BR2_ARM_FPU_NEON_VFPV4=y
+BR2_ARM_EABI=y
+
+# C Library - uClibc-ng 1.0.31
+BR2_LIBC_UCLIBC_NG=y
+
+# Compiler version (GCC 12.3 available in Buildroot 2023.11)
+BR2_GCC_VERSION_12_X=y
+
+# C++ Support
+BR2_INSTALL_LIBSTDCPP=y
+
+# Parallel Build
+BR2_JLEVEL=0
+
+# Toolchain type
+BR2_TOOLCHAIN_BUILDROOT=y

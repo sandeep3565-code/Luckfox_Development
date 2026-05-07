@@ -1,0 +1,38 @@
+# Buildroot External Tree Configuration
+# This file allows extending Buildroot with custom packages and recipes
+
+name: ROCKCHIP830_EXT
+desc: Rockchip830 (RV1106) Toolchain & Recipes
+
+# Extend Buildroot configuration
+config BR2_EXTERNAL_ROCKCHIP830_EXT_PATH
+	string
+	default "${BR2_EXTERNAL}"
+
+# Optional: Add custom packages here
+# Examples:
+# config BR2_PACKAGE_CUSTOM_LIB
+#	bool "custom-lib"
+#	help
+#	  Custom library package
+#	
+# config BR2_PACKAGE_ROCKCHIP_TOOLS
+#	bool "rockchip-tools"
+#	help
+#	  Rockchip-specific development tools
+
+if BR2_TOOLCHAIN_BUILDROOT
+
+config BR2_ROCKCHIP830_TOOLCHAIN
+	bool "Rockchip830 Toolchain Optimizations"
+	default y
+	help
+	  Apply Rockchip830-specific compiler optimizations
+
+config BR2_ROCKCHIP830_TUNE_CORTEX_A7
+	bool "Tune for Cortex-A7"
+	depends on BR2_ROCKCHIP830_TOOLCHAIN
+	help
+	  Optimize compiler flags for Cortex-A7 CPU
+
+endif

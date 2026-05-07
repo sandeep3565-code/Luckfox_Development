@@ -1,0 +1,24 @@
+--- a/libfakeroot.c	2026-05-07 14:26:09.003307013 +0530
++++ b/libfakeroot.c	2026-05-07 14:26:14.589414928 +0530
+@@ -94,6 +94,10 @@
+    These INT_* (which stands for internal) macros should always be used when
+    the fakeroot library owns the storage of the stat variable.
+ */
++#ifndef _STAT_VER
++#define _STAT_VER 0
++#endif
++
+ #ifdef STAT64_SUPPORT
+ #define INT_STRUCT_STAT struct stat64
+ #define INT_NEXT_STAT(a,b) NEXT_STAT64(_STAT_VER,a,b)
+@@ -688,6 +692,10 @@
+ }
+ #endif /* HAVE_FSTATAT */
+ 
++#ifndef _STAT_VER
++#define _STAT_VER 0
++#endif
++
+ #ifdef STAT64_SUPPORT
+ 
+ int WRAP_LSTAT64 LSTAT64_ARG (int ver,
